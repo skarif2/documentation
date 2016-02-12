@@ -11,8 +11,15 @@ var env = process.env.NODE_ENV || 'development';
 var outputDir = 'builds/development';
 
 gulp.task('jade', function(){
+   var outputStyle;
+	if(env === 'development'){
+		outputStyle = true;
+	}
+	if(env === 'production'){
+		outputStyle = false;
+	}
 	return gulp.src('src/templates/*.jade')
-		.pipe(jade())
+		.pipe(jade({pretty: outputStyle}))
 		.pipe(gulp.dest(outputDir));
 });
 
@@ -33,16 +40,16 @@ gulp.task('js', function(){
 });
 
 gulp.task('sass', function(){
-	var style;
+	var outputStyle;
 	if(env === 'development'){
-		style = 'map';
+		outputStyle = 'map';
 	}
 	if(env === 'production'){
-		style = 'compressed';
+		outputStyle = 'compressed';
 	}
 	return gulp.src('src/sass/*.scss')
       .pipe(sourcemaps.init())
-      .pipe(sass({includePaths: ['./bower_components/foundation/scss']},{outputStyle : style}).on('error', sass.logError))
+      .pipe(sass({includePaths: ['./bower_components/foundation/scss']},{outputStyle : outputStyle}).on('error', sass.logError))
       .pipe(concat('main.css'))
       .pipe(gulpif(env === 'development', sourcemaps.write()))
       .pipe(gulp.dest( outputDir + '/css'));

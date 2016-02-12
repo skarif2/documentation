@@ -1,28 +1,24 @@
-nav.top-bar(data-topbar='', role='navigation')
-   ul.title-area
-      li.name
-         h1
-            a(href='#') My Site
-      // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-      li.toggle-topbar.menu-icon
-         a(href='#')
-            span Menu
-   section.top-bar-section
-      // Right Nav Section
-      ul.right
-         li.active
-            a(href='#') Right Button Active
-         li.has-dropdown
-            a(href='#') Right Button Dropdown
-            ul.dropdown
+.sticky
+   nav.top-bar(data-topbar='', role='navigation')
+      ul.title-area
+         li.name
+            h1
+               a(href='#') Documentation
+         // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+         li.toggle-topbar.menu-icon
+            a(href='#')
+               span Menu
+      section.top-bar-section
+         // Right Nav Section
+         ul.right
+            li.has-form
+               .row.collapse
+                  .large-8.small-8.columns
+                     input(type='text', placeholder='document')
+                  .large-4.small-4.columns
+                     a(href='#').alert.button.expand Search
+         // Left Nav Section
+         //ul.left
             li
-               a(href='#') First link in dropdown
-            li.active
-               a(href='#') Active link in dropdown
-      // Left Nav Section
-      ul.left
-         li
-            a(href='#') Left Nav Button
-.alert-box.success.radius(data-alert='')
-   | This is a success alert with a radius.
-   a.close(href='#') ×
+               a(href='#') Left Nav Button
+               
