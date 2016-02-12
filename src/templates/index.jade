@@ -5,12 +5,16 @@ html
       title Decumentation
       link(href='css/main.css', rel='stylesheet', type='text/css')
       script(src='js/modernizr.js')
-      
    body
-      header
-         include ./0-layouts/navbar.jade
-      section
-         include ./0-layouts/sidenav.jade
-         include ./0-layouts/docbody.jade
-      
-      script(src='js/main.js')
+      nav.tab-bar
+         section.left-small
+            a.left-off-canvas-toggle.menu-icon(href='#')
+               span
+         section.right
+            h1.title Documentation
+      .off-canvas-wrap(data-offcanvas='')
+         .inner-wrap
+            include ./0-layouts/navbar.jade
+            include ./0-layouts/aside.jade            
+            include ./0-layouts/docbody.jade
+      script(src='js/main.js')   

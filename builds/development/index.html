@@ -6,54 +6,43 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body>
-    <header>
-      <div class="sticky">
-        <nav data-topbar="" role="navigation" class="top-bar">
-          <ul class="title-area">
-            <li class="name">
-              <h1><a href="#">Documentation</a></h1>
-            </li>
-            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone-->
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-          </ul>
-          <section class="top-bar-section">
-            <!-- Right Nav Section-->
-            <ul class="right">
-              <li class="has-form">
-                <div class="row collapse">
-                  <div class="large-8 small-8 columns">
-                    <input type="text" placeholder="document">
-                  </div>
-                  <div class="large-4 small-4 columns"><a href="#" class="alert button expand">Search</a></div>
-                </div>
-              </li>
-            </ul>
-            <!-- Left Nav Section-->
-            <!--ul.left
-            li
-               a(href='#') Left Nav Button
-               
-            -->
+    <nav class="tab-bar">
+      <section class="left-small"><a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a></section>
+      <section class="right">
+        <h1 class="title">Documentation</h1>
+      </section>
+    </nav>
+    <div data-offcanvas="" class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <nav class="tab-bar">
+          <section class="left-small"><a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a></section>
+          <section class="right">
+            <h1 class="title">Documentation</h1>
           </section>
         </nav>
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li>
+              <label>Documentation</label>
+            </li>
+            <li><a href="#">First header</a></li>
+            <li><a href="#">Second header</a></li>
+            <li><a href="#">Third header</a></li>
+            <li>
+              <label>Users</label>
+            </li>
+            <li><a href="#">Old users</a></li>
+            <li><a href="#">New users</a></li>
+          </ul>
+        </aside>
+        <section class="main-secton">
+          <div data-equalizer="" data-equalizer-mq="large-up" class="row">
+            <h2>Getting Started</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet</p>
+          </div>
+        </section>
       </div>
-    </header>
-    <section>
-      <div class="large-2 columns sidenav">
-        <ul class="side-nav">
-          <li><a href="#" class="active">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-      </div>
-      <div class="large-10 columns docbody">
-        <div data-equalizer="" data-equalizer-mq="large-up" class="row">
-          <h2>Getting Started</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet</p>
-        </div>
-      </div>
-    </section>
-    <script src="js/main.js"></script>
+    </div>
+    <script src="js/main.js">  </script>
   </body>
 </html>
