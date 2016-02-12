@@ -1,6 +1,23 @@
-nav.tab-bar
+nav.large-12.tab-bar
    section.left-small
       a.left-off-canvas-toggle.menu-icon(href='#')
          span
-   section.right
+   section.middle.tab-bar-section
       h1.title Documentation
+   section.right.tab-bar-section
+      //form
+         .row
+            .large-12.columns
+               .row.collapse.prefix-round.postfix-round
+                  .small-9.columns
+                     input(type='text', placeholder='doc')
+                  .small-3.columns
+                     a.button.postfix(href='#') Go
+      
+      //ul.right
+         li.has-form
+            div.row.collapse
+               div.large-8.small-9.columns
+                  input(type='text', placeholder='Doc')
+               div.large-4.small-3.columns
+                  a(href='#').alert.button.expand Search

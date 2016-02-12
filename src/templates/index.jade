@@ -6,15 +6,11 @@ html
       link(href='css/main.css', rel='stylesheet', type='text/css')
       script(src='js/modernizr.js')
    body
-      nav.tab-bar
-         section.left-small
-            a.left-off-canvas-toggle.menu-icon(href='#')
-               span
-         section.right
-            h1.title Documentation
+      include ./0-layouts/navbar.jade
+         
       .off-canvas-wrap(data-offcanvas='')
-         .inner-wrap
-            include ./0-layouts/navbar.jade
-            include ./0-layouts/aside.jade            
+         .inner-wrap            
+            include ./0-layouts/aside.jade
             include ./0-layouts/docbody.jade
-      script(src='js/main.js')   
+            
+      script(src='js/main.js')

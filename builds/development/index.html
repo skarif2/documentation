@@ -6,20 +6,34 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body>
-    <nav class="tab-bar">
+    <nav class="large-12 tab-bar">
       <section class="left-small"><a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a></section>
-      <section class="right">
+      <section class="middle tab-bar-section">
         <h1 class="title">Documentation</h1>
+      </section>
+      <section class="right tab-bar-section">
+        <!--form
+        .row
+           .large-12.columns
+              .row.collapse.prefix-round.postfix-round
+                 .small-9.columns
+                    input(type='text', placeholder='doc')
+                 .small-3.columns
+                    a.button.postfix(href='#') Go
+        
+        -->
+        <!--ul.right
+        li.has-form
+           div.row.collapse
+              div.large-8.small-9.columns
+                 input(type='text', placeholder='Doc')
+              div.large-4.small-3.columns
+                 a(href='#').alert.button.expand Search
+        -->
       </section>
     </nav>
     <div data-offcanvas="" class="off-canvas-wrap">
-      <div class="inner-wrap">
-        <nav class="tab-bar">
-          <section class="left-small"><a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a></section>
-          <section class="right">
-            <h1 class="title">Documentation</h1>
-          </section>
-        </nav>
+      <div class="inner-wrap">           
         <aside class="left-off-canvas-menu">
           <ul class="off-canvas-list">
             <li>
@@ -35,14 +49,15 @@
             <li><a href="#">New users</a></li>
           </ul>
         </aside>
-        <section class="main-secton">
-          <div data-equalizer="" data-equalizer-mq="large-up" class="row">
-            <h2>Getting Started</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet</p>
+        <section data-equalizer="" class="docbody">
+          <div data-equalizer-watch class="large-12 columns panel">
+            <h1>Lorem Ipsum Dolor Sit Amet Consectet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet cursus tincidunt, libero nisl eleifend tortor, vitae cursus risus mauris vitae nisi. Cras laoreet ultrices ligula eget tempus. Aenean metus purus, iaculis ut imperdiet eget, sodales et massa. Duis pellentesque nisl vel</p><img src="http://static1.purebreak.com.br/articles/3/12/25/3/@/60217-gatos-sao-adoraveis-e-inofensivos-620x0-1.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat</p>
           </div>
         </section>
       </div>
     </div>
-    <script src="js/main.js">  </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
