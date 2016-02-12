@@ -1,0 +1,22 @@
+{
+  "name": "Documentation",
+  "description": "A simple documentation site",
+  "main": "",
+  "authors": [
+    "skarif2 <skarif2@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "^5.5.3"
+  }
+}

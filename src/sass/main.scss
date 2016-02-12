@@ -1,0 +1,10 @@
+@import 'foundation';
+@import '0-plugins/_plugins.scss';
+@import '1-base/_base.scss';
+@import '2-modules/_modules.scss';
+@import '3-layouts/_layouts.scss';
+@import '4-foundation/settings';
+
+body{
+	color: red;
+}
