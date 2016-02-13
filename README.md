@@ -38,4 +38,5 @@ or
 
 ## Contribute
 
-## License
+## License:
+MIT [2016]
