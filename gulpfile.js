@@ -29,7 +29,7 @@ gulp.task('js', function(){
       './bower_components/foundation/js/foundation.js',
       './bower_components/foundation/js/foundation.alert.js',
       './src/js/main.js'
-   ])		
+   ])
 		.pipe(sourcemaps.init())
       .pipe(concat('main.js'))
 		.pipe(gulpif(env === 'production', uglify()))
@@ -49,7 +49,7 @@ gulp.task('sass', function(){
 	}
 	return gulp.src('src/sass/*.scss')
       .pipe(sourcemaps.init())
-      .pipe(sass({includePaths: ['./bower_components/foundation/scss']},{outputStyle : outputStyle}).on('error', sass.logError))
+      .pipe(sass({includePaths: ['./bower_components/foundation/scss','./bower_components/hover/css/']},{outputStyle : outputStyle}).on('error', sass.logError))
       .pipe(concat('main.css'))
       .pipe(gulpif(env === 'development', sourcemaps.write()))
       .pipe(gulp.dest( outputDir + '/css'));
