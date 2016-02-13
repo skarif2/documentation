@@ -18,5 +18,8 @@
   ],
   "devDependencies": {
     "foundation": "^5.5.3"
+  },
+  "dependencies": {
+    "hover": "^2.0.2"
   }
 }

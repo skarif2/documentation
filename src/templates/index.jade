@@ -4,13 +4,15 @@ html
    head
       title Decumentation
       link(href='css/main.css', rel='stylesheet', type='text/css')
+      link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet' , type='text/css')
+      link(href='https://fonts.googleapis.com/css?family=Pontano+Sans', rel='stylesheet' , type='text/css')
       script(src='js/modernizr.js')
    body
-      include ./0-layouts/navbar.jade
-         
+      include ./partials/navbar.jade
+
       .off-canvas-wrap(data-offcanvas='')
-         .inner-wrap            
-            include ./0-layouts/aside.jade
-            include ./0-layouts/docbody.jade
-            
+         .inner-wrap
+            include ./partials/aside.jade
+            include ./partials/docbody.jade
+
       script(src='js/main.js')
